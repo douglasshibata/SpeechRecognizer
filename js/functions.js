@@ -66,7 +66,7 @@ if (window.SpeechRecognition || window.webkitSpeechRecognition) {
 
 
   gravador.onstart = function () {
-    btnGravador.innerText = "Estou Ouvindo";
+    btnGravador.innerText = "Estou Ouvindo :D";
     btnGravador.style.backgroundColor = "white";
     btnGravador.style.color = "black";
   }
@@ -93,7 +93,7 @@ if (window.SpeechRecognition || window.webkitSpeechRecognition) {
 
 
 } else {
-  alert('não tem suporte');
+  alert('O navegador Não tem suporte para este Jogo');
 }
 
 
