@@ -58,7 +58,7 @@ section#corpo{
 }
 
 section#corpo div#direita{
-
+  width: auto;
 }
 
 section#corpo div#esquerda{
