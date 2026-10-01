@@ -1,0 +1,13 @@
+{
+  "name": "speech-recognizer-mario",
+  "version": "1.0.0",
+  "description": "Super Mario English Challenge color learning game",
+  "main": "js/functions.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

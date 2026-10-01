@@ -4,51 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self';">
+    <title>Super Mario English Challenge</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Jogo Mario</title>
     <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="container">
         <header id="cabecalho-principal">
-            <div id="pontuacao-game">
-                <img src="img/moeda.png" height="20px" alt="Imagem da Moeda" />
+            <div id="pontuacao-game" aria-live="polite">
+                <img src="img/moeda.png" height="20" width="20" alt="Moeda" />
                 Moedas:&nbsp;&nbsp; <span id="pontuacao-atual">0</span>
             </div>
 
-            <div id="nome-jogo">
+            <h1 id="nome-jogo">
                 Super Mario English Challenge
-            </div>
+            </h1>
         </header>
 
-        <section id="corpo">
-            <div id="esquerda">
-                <h3>FALE O NOME DA COR EM INGLÊS</h3>
-                <span id="cor-na-caixa"></span>
+        <main id="corpo">
+            <section id="esquerda">
+                <h2>FALE O NOME DA COR EM INGLÊS</h2>
+                <span id="cor-na-caixa" aria-live="assertive"></span>
 
-                <div id="cor-atual">
+                <div id="cor-atual" role="img" aria-label="Caixa da cor atual"></div>
 
-                </div>
+                <button id="btn-responder" type="button">RESPONDER</button>
+                <div id="status-mensagem" class="status-msg" aria-live="polite"></div>
+            </section>
 
-                <button id="btn-responder">RESPONDER</button>
-
-            </div>
-
-            <div id="direita">
-                <img src="img/mario.png" height="390px" alt="Super Mario" />
-            </div>
-
-        </section>
+            <section id="direita">
+                <img src="img/mario.png" height="390" alt="Super Mario" />
+            </section>
+        </main>
 
         <footer id="rodape">
-            <img src="img/logo-dio.png" height="90px" alt="logo da Digital Innovation One" />
+            <img src="img/logo-dio.png" height="90" alt="Logo da Digital Innovation One" />
         </footer>
     </div>
 
-
-    <script src="js/functions.js"></script>
+    <script src="js/functions.js" defer></script>
 </body>
 
 </html>
